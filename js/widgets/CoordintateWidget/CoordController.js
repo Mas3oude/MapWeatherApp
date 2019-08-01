@@ -52,7 +52,7 @@ define([
   
 
       GetLatLongByMapPoint: function (evt) {
-        if (this.map.spatialReference.wkid == 102100)
+        if (this.map.spatialReference.wkid === '102100')
         {
         var mp = webMercatorUtils.webMercatorToGeographic(evt.mapPoint);
         //i also can use this function to conver the X,y to Lat and Lang
@@ -73,14 +73,7 @@ define([
        },
        GetAndDisplayResults:function(mp)
        {
-        if (mp)
-        {           
-         
-        }
-        else{
-
-        }
-         
+                
        },
       // start widget
       startup: function() {
