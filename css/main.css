@@ -1,0 +1,29 @@
+#map-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#map-div .container {
+  max-width: 100%;
+}
+
+#map-tools {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+#corrdinates
+{
+ position: absolute;
+ top: 100px;
+ right: 20px; 
+}
+#WeatherContainer
+{
+  position: absolute;
+  top: 130x;
+  right: 20px; 
+}
