@@ -1,4 +1,6 @@
-/*Mohamed Masoud*/
+/*
+ * Create by : Mohamed Masoud
+ */
 define([
     'dojo/_base/declare',
     'dojo/_base/lang',

@@ -1,3 +1,7 @@
+/*
+ * Create by : Mohamed Masoud
+ */
+//configure the applicatio
 (function () {
   'use strict';
 

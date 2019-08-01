@@ -1,3 +1,6 @@
+/*
+ * Create by : Mohamed Masoud
+ */
 define({
   //map configurations
     mapOptions: {

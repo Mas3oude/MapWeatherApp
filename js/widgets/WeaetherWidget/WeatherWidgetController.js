@@ -1,4 +1,7 @@
-/*Mohamed Masoud*/
+/*
+ * Create by : Mohamed Masoud
+ */
+
 define([
     'dojo/_base/declare',
     'dojo/_base/lang',
@@ -47,17 +50,19 @@ define([
       },
   
 
-      GetLatLongByMapPoint: function (evt) {
-        if (this.map.spatialReference.wkid == 102100)
+        GetLatLongByMapPoint: function (evt)
         {
-        var mp = webMercatorUtils.webMercatorToGeographic(evt.mapPoint);
-        console.debug("Weather : lat long ",mp.x , mp.y);
-        //i also can use this function to conver the X,y to Lat and Lang
-        //but because there is another function convert to Geographic which WGS84 
-        //var latLongValue = esri.geometry.xyToLngLat(evt.mapPoint.x, evt.mapPoint.y);
-        }
-        else{
-        }
+            if (this.map.spatialReference.wkid === '102100')
+            {
+            var mp = webMercatorUtils.webMercatorToGeographic(evt.mapPoint);
+            console.debug("Weather : lat long ",mp.x , mp.y);
+            //i also can use this function to conver the X,y to Lat and Lang
+            //but because there is another function convert to Geographic which WGS84 
+            //var latLongValue = esri.geometry.xyToLngLat(evt.mapPoint.x, evt.mapPoint.y);
+            }
+            else {
+                //TODO call the UI handler directly
+            }
        },
       // start widget
       startup: function() {
